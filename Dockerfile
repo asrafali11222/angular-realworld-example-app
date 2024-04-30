@@ -26,7 +26,7 @@ RUN npm run build -- --configuration="production"
 FROM nginx:stable-alpine
 
 
-COPY --from=builder /usr/local/app/dist/nft-frontend /usr/share/nginx/html
+COPY --from=builder /usr/local/app/dist/angular-conduit /usr/share/nginx/html
 
 
 # Changing the ownership
